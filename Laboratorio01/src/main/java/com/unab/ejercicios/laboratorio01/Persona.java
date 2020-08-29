@@ -2,22 +2,26 @@ package com.unab.ejercicios.laboratorio01;
 
 public class Persona {
 
+    //Abstrayendo las caracteristicas(atributos)del objeto
     private String Nombre;
     private int Edad;
     private String Sexo;
     private double Peso;
     private double Altura;
 
+    //constructor vacio para facilitar la la modificacion de los atributos
     public Persona() {
 
     }
 
+    //constructor con tre parámetros
     public Persona(String Nombre, int Edad, String Sexo) {
         this.Nombre = Nombre;
         this.Edad = Edad;
         this.Sexo = Sexo;
     }
 
+    //constructor con todos los parámetros
     public Persona(String Nombre, int Edad, String Sexo, double Peso, double Altura) {
 
         this.Nombre = Nombre;
@@ -43,6 +47,7 @@ public class Persona {
         this.Edad = Edad;
     }
 
+    //Metodo para verificar si es mayor o menor de edad
     public String esMayorDeEdad() {
         int edad = this.Edad;
         if (edad < 18) {
@@ -77,6 +82,7 @@ public class Persona {
         this.Altura = Altura;
     }
 
+    //Mostrando los datos  de los atributos, de los tres objetos creados
     public String InfoObj1() {
         return "Persona{" + "Nombre=" + Nombre + ", Edad=" + Edad + ","
                 + " Sexo=" + Sexo + ", Peso=" + Peso + ", Altura=" + Altura + '}';
