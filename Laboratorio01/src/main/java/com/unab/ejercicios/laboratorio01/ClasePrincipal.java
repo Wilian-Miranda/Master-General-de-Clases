@@ -29,7 +29,7 @@ public class ClasePrincipal {
         pasando los parametros de forma directa al constructor*/
         System.out.println("PRIMER OBJETO:");
         Persona Obj1 = new Persona(Nombre, Edad, Sexo, Peso, Altura);
-        System.out.println(Obj1.InfoObj1());
+        System.out.println(Obj1.InfoObj1());//mostrando datos de los atributos
         System.out.println(Obj1.esMayorDeEdad() + "\n");
 
         /*Segunda instancia de la clase persona
@@ -37,7 +37,7 @@ public class ClasePrincipal {
         System.out.println("SEGUNDO OBJETO:");
         Persona Obj2 = new Persona(Obj1.getNombre(), Obj1.getEdad(),
                 Obj1.getSexo());
-        System.out.println(Obj2.InfoObj2());
+        System.out.println(Obj2.InfoObj2());//mostrando datos de los atributos
         System.out.println(Obj2.esMayorDeEdad() + "\n");
 
         /*Tercera instancia de la clase persona
@@ -49,7 +49,7 @@ public class ClasePrincipal {
         Obj3.setSexo(Sexo);
         Obj3.setPeso(Peso);
         Obj3.setAltura(Altura);
-        System.out.println(Obj3.InfoObj3());
+        System.out.println(Obj3.InfoObj3());//mostrando datos de los atributos
         System.out.println(Obj3.esMayorDeEdad());
    
     }
