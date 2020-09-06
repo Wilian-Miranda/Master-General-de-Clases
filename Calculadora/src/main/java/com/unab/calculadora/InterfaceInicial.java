@@ -352,127 +352,194 @@ public class InterfaceInicial extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDividirActionPerformed
-        if(txtPantalla.getText().equals("") != true){
+        if (txtPantalla.getText().equals("") != true) {
             Dato1 = txtPantalla.getText();
-            Accion = "dividir";
+            Accion = " / ";
             txtPantalla.setText("");
-            
+
         }
     }//GEN-LAST:event_btnDividirActionPerformed
 
     private void btnRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestaActionPerformed
-        if(txtPantalla.getText().equals("") != true){
+        if (txtPantalla.getText().equals("") != true) {
             Dato1 = txtPantalla.getText();
-            Accion = "restar";
+            Accion = " - ";
             txtPantalla.setText("");
-            
+
         }
     }//GEN-LAST:event_btnRestaActionPerformed
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
-        txtPantalla.setText(txtPantalla.getText() + "7");
+
+        if (EncontrarAccion(txtPantalla.getText()) == true) {
+            txtPantalla.setText("");
+            txtPantalla.setText(txtPantalla.getText() + "7");
+
+        } else {
+            txtPantalla.setText(txtPantalla.getText() + "7");
+        }
+
     }//GEN-LAST:event_btn7ActionPerformed
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
-        txtPantalla.setText(txtPantalla.getText() + "2");
+        if (EncontrarAccion(txtPantalla.getText()) == true) {
+            txtPantalla.setText("");
+            txtPantalla.setText(txtPantalla.getText() + "2");
+
+        } else {
+            txtPantalla.setText(txtPantalla.getText() + "2");
+        }
     }//GEN-LAST:event_btn2ActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-        txtPantalla.setText(txtPantalla.getText() + "1");
+        if (EncontrarAccion(txtPantalla.getText()) == true) {
+            txtPantalla.setText("");
+            txtPantalla.setText(txtPantalla.getText() + "1");
+
+        } else {
+            txtPantalla.setText(txtPantalla.getText() + "1");
+        }
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
-        txtPantalla.setText(txtPantalla.getText() + "9");
+        if (EncontrarAccion(txtPantalla.getText()) == true) {
+            txtPantalla.setText("");
+            txtPantalla.setText(txtPantalla.getText() + "9");
+
+        } else {
+            txtPantalla.setText(txtPantalla.getText() + "9");
+        }
     }//GEN-LAST:event_btn9ActionPerformed
 
     private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed
         String Operacion;
         Operacion = txtPantalla.getText();
-        
-        if (Operacion.length() > 0 ){
+
+        if (Operacion.length() > 0) {
             Operacion = Operacion.substring(0, Operacion.length() - 1);
             txtPantalla.setText(Operacion);
         }
-               
+
     }//GEN-LAST:event_btnBorrarActionPerformed
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
-        txtPantalla.setText(txtPantalla.getText() + "4");
+        if (EncontrarAccion(txtPantalla.getText()) == true) {
+            txtPantalla.setText("");
+            txtPantalla.setText(txtPantalla.getText() + "4");
+
+        } else {
+            txtPantalla.setText(txtPantalla.getText() + "4");
+        }
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
-        txtPantalla.setText(txtPantalla.getText() + "5");
+        if (EncontrarAccion(txtPantalla.getText()) == true) {
+            txtPantalla.setText("");
+            txtPantalla.setText(txtPantalla.getText() + "5");
+
+        } else {
+            txtPantalla.setText(txtPantalla.getText() + "5");
+        }
     }//GEN-LAST:event_btn5ActionPerformed
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
-        txtPantalla.setText(txtPantalla.getText() + "6");
+        if (EncontrarAccion(txtPantalla.getText()) == true) {
+            txtPantalla.setText("");
+            txtPantalla.setText(txtPantalla.getText() + "6");
+
+        } else {
+            txtPantalla.setText(txtPantalla.getText() + "6");
+        }
     }//GEN-LAST:event_btn6ActionPerformed
 
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
-        txtPantalla.setText(txtPantalla.getText() + "8");
+        if (EncontrarAccion(txtPantalla.getText()) == true) {
+            txtPantalla.setText("");
+            txtPantalla.setText(txtPantalla.getText() + "8");
+
+        } else {
+            txtPantalla.setText(txtPantalla.getText() + "8");
+        }
     }//GEN-LAST:event_btn8ActionPerformed
 
     private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
-        txtPantalla.setText(txtPantalla.getText() + "0");
+        if (EncontrarAccion(txtPantalla.getText()) == true) {
+            txtPantalla.setText("");
+            txtPantalla.setText(txtPantalla.getText() + "0");
+
+        } else {
+            txtPantalla.setText(txtPantalla.getText() + "0");
+        }
     }//GEN-LAST:event_btn0ActionPerformed
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
-        txtPantalla.setText(txtPantalla.getText() + "3");
+        if (EncontrarAccion(txtPantalla.getText()) == true) {
+            txtPantalla.setText("");
+            txtPantalla.setText(txtPantalla.getText() + "3");
+
+        } else {
+            txtPantalla.setText(txtPantalla.getText() + "3");
+        }
     }//GEN-LAST:event_btn3ActionPerformed
 
     private void btnSumarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumarActionPerformed
-        if(txtPantalla.getText().equals("") != true){
+        if (txtPantalla.getText().equals("") != true) {
             Dato1 = txtPantalla.getText();
-            Accion = "sumar";
+            Accion = " + ";
             txtPantalla.setText("");
-            
+
         }
-        
-                               
+
     }//GEN-LAST:event_btnSumarActionPerformed
 
     private void btnPuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPuntoActionPerformed
         // TODO add your handling code here:
         String Operacion;
         Operacion = txtPantalla.getText();
-        
-        if (EncontrarPunto(txtPantalla.getText()) != true){
+
+        if (EncontrarPunto(txtPantalla.getText()) != true) {
             txtPantalla.setText(txtPantalla.getText() + ".");
-        
+
         }
-        
-        
+
+
     }//GEN-LAST:event_btnPuntoActionPerformed
 
     private void btnMostrarResultadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostrarResultadoActionPerformed
         clsOperacionesMath calcular = new clsOperacionesMath();
         String Resultado;
         Dato2 = txtPantalla.getText();
-        
-        if (Dato2 != ""){
-            Resultado = calcular.calcular(Dato1, Accion, Dato2);
-            txtPantalla.setText(Resultado);
-                        
+
+        if (EncontrarAccion(Dato2) == true) {
+            txtPantalla.setText(Dato2);
+
+        } else {
+
+            if (Dato2 != "") {
+                Resultado = calcular.calcular(Dato1, Accion, Dato2);
+                txtPantalla.setText(Resultado);
+
+            }
         }
-        
-        
+
+
     }//GEN-LAST:event_btnMostrarResultadoActionPerformed
 
     private void btnMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicarActionPerformed
-        if(txtPantalla.getText().equals("") != true){
+        if (txtPantalla.getText().equals("") != true) {
             Dato1 = txtPantalla.getText();
-            Accion = "multiplicar";
+            Accion = " x ";
             txtPantalla.setText("");
-            
+
         }
     }//GEN-LAST:event_btnMultiplicarActionPerformed
 
     private void btnResiduoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResiduoActionPerformed
-        if(txtPantalla.getText().equals("") != true){
+        if (txtPantalla.getText().equals("") != true) {
             Dato1 = txtPantalla.getText();
-            Accion = "residuo";
+            Accion = " % ";
             txtPantalla.setText("");
-            
+
         }
     }//GEN-LAST:event_btnResiduoActionPerformed
 
@@ -484,19 +551,49 @@ public class InterfaceInicial extends javax.swing.JFrame {
 
     }//GEN-LAST:event_txtPantallaActionPerformed
 
-    public static boolean EncontrarPunto(String Operacion){
+    public static boolean EncontrarPunto(String Operacion) {
         boolean Resultado = false;
-              
+
         for (int i = 0; i < Operacion.length(); i++) {
-            if(Operacion.substring(i, i + 1).equals(".")){
+            if (Operacion.substring(i, i + 1).equals(".")) {
                 Resultado = true;
                 break;
             }
         }
-        
+
         return Resultado;
-    
+
     }
+
+    public static boolean EncontrarAccion(String Operacion) {
+        boolean R = false;
+        for (int i = 0; i < Operacion.length(); i++) {
+            if (Operacion.substring(i, i + 1).equals("-")) {
+                R = true;
+                break;
+            }
+            if (Operacion.substring(i, i + 1).equals("+")) {
+                R = true;
+                break;
+            }
+            if (Operacion.substring(i, i + 1).equals("/")) {
+                R = true;
+                break;
+            }
+            if (Operacion.substring(i, i + 1).equals("x")) {
+                R = true;
+                break;
+            }
+            if (Operacion.substring(i, i + 1).equals("%")) {
+                R = true;
+                break;
+            }
+
+        }
+        return R;
+
+    }
+
     /**
      * @param args the command line arguments
      */

@@ -17,29 +17,32 @@ public class clsOperacionesMath {
     public String calcular(String Dato1, String Accion, String Dato2) {
         double Result = 0;
         String Respuesta;
-        if (Accion == "sumar") {
+        if (Accion == " + ") {
             Result = Double.parseDouble(Dato1) + Double.parseDouble(Dato2);
             
         }
-        if (Accion == "restar") {
+        if (Accion == " - ") {
             Result = Double.parseDouble(Dato1) - Double.parseDouble(Dato2);
             
         }
-        if (Accion == "dividir") {
+        if (Accion == " / ") {
             Result = Double.parseDouble(Dato1) / Double.parseDouble(Dato2);
             
         }
-        if (Accion == "multiplicar") {
+        if (Accion == " x ") {
             Result = Double.parseDouble(Dato1) * Double.parseDouble(Dato2);
             
         }
-        if (Accion == "residuo") {
+        if (Accion == " % ") {
             Result = Double.parseDouble(Dato1) % Double.parseDouble(Dato2);
             
         }
-        Respuesta = Double.toString(Result);
+        Respuesta = Dato1 + Accion + Dato2 + " = " + Double.toString(Result);
         return Respuesta;
-
+       
     }
+    
+    
+
 
 }
