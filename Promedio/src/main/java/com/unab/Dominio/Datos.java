@@ -2,6 +2,7 @@ package com.unab.Dominio;
 
 public class Datos {
 
+    //atributos 
     private String laboratorio;
     private String parcial;
     private String periodo1;
@@ -9,6 +10,8 @@ public class Datos {
     private String periodo3;
     private String resultadoFinal;
 
+    
+    //métodos para modifcar los atributos 
     public String getLaboratorio() {
         return laboratorio;
     }

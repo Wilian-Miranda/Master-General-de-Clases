@@ -70,9 +70,11 @@ public class jfrInicio extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(102, 102, 102));
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
+        jLabel2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("LABORATORIO 1");
 
+        jLabel3.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("PARCIAL 1");
 
@@ -99,6 +101,7 @@ public class jfrInicio extends javax.swing.JFrame {
             }
         });
 
+        jLabel8.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("NOTA DE PERIODO I");
 
@@ -108,6 +111,11 @@ public class jfrInicio extends javax.swing.JFrame {
         txtNotaPeriodo1.setForeground(new java.awt.Color(255, 255, 255));
         txtNotaPeriodo1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtNotaPeriodo1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        txtNotaPeriodo1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNotaPeriodo1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -115,15 +123,19 @@ public class jfrInicio extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(78, 78, 78)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel3)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(34, 34, 34))
                     .addComponent(txtLaboratorio1)
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(txtParcial1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
+                .addGap(68, 68, 68)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel8)
-                    .addComponent(txtNotaPeriodo1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(59, 59, 59))
+                    .addComponent(txtNotaPeriodo1))
                 .addGap(18, 18, 18))
         );
         jPanel2Layout.setVerticalGroup(
@@ -131,25 +143,30 @@ public class jfrInicio extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel2)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(5, 5, 5)
+                        .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(txtLaboratorio1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtLaboratorio1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(5, 5, 5)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(txtNotaPeriodo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtParcial1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(txtParcial1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jPanel4.setBackground(new java.awt.Color(102, 102, 102));
         jPanel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
+        jLabel4.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("LABORATORIO 2");
 
+        jLabel6.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("PARCIAL 2");
 
@@ -175,6 +192,7 @@ public class jfrInicio extends javax.swing.JFrame {
             }
         });
 
+        jLabel9.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("NOTA DE PERIODO II");
 
@@ -191,43 +209,50 @@ public class jfrInicio extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(77, 77, 77)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel6)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(34, 34, 34))
                     .addComponent(txtLaboratorio2)
                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(txtParcial2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
+                .addGap(65, 65, 65)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel9)
-                    .addComponent(txtNotaPeriodo2, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(56, 56, 56))
+                    .addComponent(txtNotaPeriodo2))
                 .addGap(22, 22, 22))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel4)
+                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(txtLaboratorio2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtLaboratorio2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel6))
+                        .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel9)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtNotaPeriodo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtNotaPeriodo2)
+                        .addGap(6, 6, 6)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtParcial2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(txtParcial2)
+                .addContainerGap())
         );
 
         jPanel5.setBackground(new java.awt.Color(102, 102, 102));
         jPanel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
+        jLabel5.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("LABORATORIO 3");
 
+        jLabel7.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("PARCIAL 3");
 
@@ -248,6 +273,7 @@ public class jfrInicio extends javax.swing.JFrame {
             }
         });
 
+        jLabel10.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("NOTA DE PERIODO III");
 
@@ -264,35 +290,39 @@ public class jfrInicio extends javax.swing.JFrame {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(77, 77, 77)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtParcial3)
-                    .addComponent(jLabel7)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(34, 34, 34))
                     .addComponent(txtLaboratorio3)
                     .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
+                .addGap(64, 64, 64)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel10)
-                    .addComponent(txtNotaPeriodo3, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(53, 53, 53))
+                    .addComponent(txtNotaPeriodo3))
                 .addGap(23, 23, 23))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel5)
+                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(txtLaboratorio3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtLaboratorio3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel7))
+                        .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jLabel10)
+                        .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtNotaPeriodo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtNotaPeriodo3)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtParcial3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(txtParcial3)
+                .addContainerGap())
         );
 
         jLabel1.setBackground(new java.awt.Color(0, 51, 51));
@@ -300,6 +330,7 @@ public class jfrInicio extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("PROMEDIO DE ASIGNATURA POR CICLO");
 
+        jLabel11.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("RESULTADO");
 
@@ -311,6 +342,7 @@ public class jfrInicio extends javax.swing.JFrame {
         txtPromedioFinal.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
 
         btnCalculo.setBackground(new java.awt.Color(0, 51, 51));
+        btnCalculo.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         btnCalculo.setForeground(new java.awt.Color(255, 255, 255));
         btnCalculo.setText("CALCULAR");
         btnCalculo.addActionListener(new java.awt.event.ActionListener() {
@@ -326,43 +358,45 @@ public class jfrInicio extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 476, Short.MAX_VALUE)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 476, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel11)
+                        .addGap(32, 32, 32)
+                        .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtPromedioFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtPromedioFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(21, 21, 21))
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 476, Short.MAX_VALUE))
                 .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 31, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(55, 55, 55))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(181, 181, 181)
-                .addComponent(btnCalculo)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(btnCalculo, javax.swing.GroupLayout.DEFAULT_SIZE, 136, Short.MAX_VALUE)
+                .addGap(171, 171, 171))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(50, 50, 50))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(4, 4, 4)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
+                .addGap(18, 18, 18)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(29, 29, 29)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(5, 5, 5)
+                        .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(txtPromedioFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(btnCalculo)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(btnCalculo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -404,23 +438,34 @@ public class jfrInicio extends javax.swing.JFrame {
     private void btnCalculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculoActionPerformed
         // TODO add your handling code here:
         String resultado = "";
+        boolean Error1 = false;
+        boolean Error2 = false;
+        boolean Error3 = false;
+
+        //Creando objetos
         Datos atributo = new Datos();
         ClsPromedio calculo = new ClsPromedio();
 
-        //periodo 1
+        //PERIODO1
         String resultado1 = "";
 
+        /*Si se escriben letras en las casilla laboratorio1 y parcial1 la 
+        variable Error tomará el valor de true indicando que se ingresó 
+        texto*/
         try {
             Double a = Double.parseDouble(txtLaboratorio1.getText());
         } catch (Exception e) {
-            txtLaboratorio1.setText("0");
+            Error1 = true;
         }
+
         try {
             Double a = Double.parseDouble(txtParcial1.getText());
         } catch (Exception e) {
-            txtParcial1.setText("0");
+            Error1 = true;
         }
 
+        /*Si una o las dos casillas están vacias y se presiona igual,
+        se le asignará un cero a cada casilla vacía*/
         if (txtLaboratorio1.getText().equals("")) {
             txtLaboratorio1.setText("0");
 
@@ -429,31 +474,41 @@ public class jfrInicio extends javax.swing.JFrame {
             txtParcial1.setText("0");
         }
 
-        atributo.setLaboratorio(txtLaboratorio1.getText());
-        atributo.setParcial(txtParcial1.getText());
-
-        resultado1 = calculo.periodo(atributo);
-        txtNotaPeriodo1.setText(resultado1);
-
-        if (resultado1.equals("Datos no válidos") == true) {
-            resultado1 = "error";
+        /*Si se ingresa texto los metodos no se utilizan y se muestran un 
+        mensaje de error, la variable error es utilizada para verificar 
+        si el usuario ingresó texto*/
+        if (Error1 == true) {
+            txtNotaPeriodo1.setText("Datos no válidos");
         } else {
-            atributo.setPeriodo1(resultado1);
+            //Asignando los valores ingresados a los atributos correspondientes
+            atributo.setLaboratorio(txtLaboratorio1.getText());
+            atributo.setParcial(txtParcial1.getText());
+
+            /*Utilizando el método para calcular el periodo 1 y 
+            mostrando al usuario*/
+            resultado1 = calculo.periodo(atributo);
+            txtNotaPeriodo1.setText(resultado1);
         }
 
-        //periodo2
+        //PERIODO2
         String resultado2 = "";
+        
+        /*Si se escriben letras en las casilla laboratorio2 y parcial2 la 
+        variable Error tomará el valor de true indicando que se ingresó 
+        texto*/
         try {
             Double a = Double.parseDouble(txtLaboratorio2.getText());
         } catch (Exception e) {
-            txtLaboratorio2.setText("0");
+            Error2 = true;
         }
         try {
             Double a = Double.parseDouble(txtParcial2.getText());
         } catch (Exception e) {
-            txtParcial2.setText("0");
+            Error2 = true;
         }
 
+        /*Si una o las dos casillas están vacias y se presiona igual,
+        se le asignará un cero a cada casilla vacía*/
         if (txtLaboratorio2.getText().equals("")) {
             txtLaboratorio2.setText("0");
 
@@ -462,31 +517,41 @@ public class jfrInicio extends javax.swing.JFrame {
             txtParcial2.setText("0");
         }
 
-        atributo.setLaboratorio(txtLaboratorio2.getText());
-        atributo.setParcial(txtParcial2.getText());
-
-        resultado2 = calculo.periodo(atributo);
-        txtNotaPeriodo2.setText(resultado2);
-
-        if (resultado2.equals("Datos no válidos") == true) {
-            resultado2 = "error";
+        /*Si se ingresa texto los metodos no se utilizan y se muestran un 
+        mensaje de error, la variable error es utilizada para verificar 
+        si el usuario ingresó texto*/
+        if (Error2 == true) {
+            txtNotaPeriodo2.setText("Datos no válidos");
         } else {
-            atributo.setPeriodo2(resultado2);
+            //Asignando los valores ingresados a los atributos correspondientes
+            atributo.setLaboratorio(txtLaboratorio2.getText());
+            atributo.setParcial(txtParcial2.getText());
+
+            /*Utilizando el método para calcular el periodo 2 y 
+            mostrando al usuario el resultado*/
+            resultado2 = calculo.periodo(atributo);
+            txtNotaPeriodo2.setText(resultado2);
         }
 
-        //periodo3
+        //PERIODO3
         String resultado3 = "";
+        
+        /*Si se escriben letras en las casilla laboratorio3 y parcial3 la 
+        variable Error tomará el valor de true indicando que se ingresó 
+        texto*/
         try {
             Double a = Double.parseDouble(txtLaboratorio3.getText());
         } catch (Exception e) {
-            txtLaboratorio3.setText("0");
+            Error3 = true;
         }
         try {
             Double a = Double.parseDouble(txtParcial3.getText());
         } catch (Exception e) {
-            txtParcial3.setText("0");
+            Error3 = true;
         }
 
+        /*Si una o las dos casillas están vacias y se presiona igual,
+        se le asignará un cero a cada casilla vacía*/
         if (txtLaboratorio3.getText().equals("")) {
             txtLaboratorio3.setText("0");
 
@@ -495,19 +560,23 @@ public class jfrInicio extends javax.swing.JFrame {
             txtParcial3.setText("0");
         }
 
-        atributo.setLaboratorio(txtLaboratorio3.getText());
-        atributo.setParcial(txtParcial3.getText());
-
-        resultado3 = calculo.periodo(atributo);
-        txtNotaPeriodo3.setText(resultado3);
-
-        if (resultado3.equals("Datos no válidos") == true) {
-            resultado3 = "error";
+        /*Si se ingresa texto los metodos no se utilizan y se muestran un 
+        mensaje de error, la variable error es utilizada para verificar 
+        si el usuario ingresó texto*/
+        if (Error3 == true) {
+            txtNotaPeriodo3.setText("Datos no válidos");
         } else {
-            atributo.setPeriodo3(resultado3);
+            //Asignando los valores ingresados a los atributos correspondientes
+            atributo.setLaboratorio(txtLaboratorio3.getText());
+            atributo.setParcial(txtParcial3.getText());
+
+            /*Utilizando el método para calcular el periodo 3 y 
+            mostrando al usuario el resultado*/
+            resultado3 = calculo.periodo(atributo);
+            txtNotaPeriodo3.setText(resultado3);
         }
 
-        //resultado final 
+        //Calculando el resultado final y mostrando al usuario
         resultado = calculo.aprobarCiclo(resultado1, resultado2, resultado3);
 
         txtPromedioFinal.setText(resultado);
@@ -517,6 +586,10 @@ public class jfrInicio extends javax.swing.JFrame {
         // TODO add your handling code here:
 
     }//GEN-LAST:event_txtLaboratorio1ActionPerformed
+
+    private void txtNotaPeriodo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNotaPeriodo1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNotaPeriodo1ActionPerformed
 
     /**
      * @param args the command line arguments
