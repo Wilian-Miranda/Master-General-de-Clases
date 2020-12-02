@@ -1,0 +1,75 @@
+.principal{
+    position: absolute;
+    height: 500px;
+    width: 400px;
+    background-color: #958fbc;
+    text-align: center;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 5px;
+
+}
+.cardbody{
+    background: ghostwhite;
+    height: 76.5%;
+    padding: 20px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    
+}
+body{
+    background-image: url("https://www.kdeblog.com/wp-content/uploads/2014/04/rect5399-620x350.png");
+    background-size: cover;
+}
+.logotipoLogin{
+    height: 50px;
+    width: 50px; 
+    
+}
+.txtUsuario{
+    margin-top: 28%;
+    font-size: 20px;
+    text-align: center;
+}
+.usuario{
+    text-align: center;
+}
+.contraseña{
+    text-align: center;
+}
+.txtPasword{
+    margin-top: 5%;
+    font-size: 20px;
+    text-align: center;
+}
+.btnIngresar{
+    margin-top: 7%;
+    font-size: 20px;
+    background-color: #958fbc;
+}
+
+input{
+    align-content: center;
+    font-size: 20px;
+    color: rgb(85, 82, 82);
+    background-color: rgb(240, 224, 237);
+    border-radius: 10%;
+    
+    
+}
+img{
+    text-align: center;
+    top: 81%;
+    right: 50%;
+    transform: translate(100%,-00%);
+    height: 120px;
+    width: 120px;
+}
