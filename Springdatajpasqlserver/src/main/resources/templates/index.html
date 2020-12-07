@@ -1,11 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.Thymealft.org">
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<h1>HOOOOOOOLhdbfohdbv oVDBOV obDBVOSdv </h1>
+    <a class="btn btn-outline-success" th:href="@{/agregar}">AGREGAR</a>
+	<table class="table table-bordered table-dark">
+		<thead>
+			<th>NOMBRE</th>
+			<th>APELLIDO</th>
+			<th>EMAIL</th>
+			<th>TELEFONO</th>
+			<th> <a>EDITAR</a>  </th>
+			<th> <a>ELIMINAR</a></th>
+		</thead>
+
+		<tbody>
+		<tr th:each="Iteracion : ${persona}">
+		<td th:text="${Iteracion.nombre}"></td>
+		<td th:text="${Iteracion.apellido}"></td>
+		<td th:text="${Iteracion.email}"></td>
+		<td th:text="${Iteracion.telefono}"></td>
+		<td><a>Editar</a> </td>
+		<td> <a>Eliminar</a></td>
+		</tr>
+
+		</tbody>
+	</table>
 
 </body>
 </html>
